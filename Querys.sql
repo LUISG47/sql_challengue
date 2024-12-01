@@ -103,6 +103,7 @@ LIMIT 100;
 ------------------------------------------------------------------------------------
 ------------------          		  EXTRA				-----------------------------
 -- Show the same table but adding the title of the employee
+-- showing only the first 100 results
 ------------------------------------------------------------------------------------
 
 SELECT E.emp_no, E.last_name, E.first_name, T.title, D.dept_name, S.salary
@@ -113,3 +114,16 @@ JOIN salaries S ON E.emp_no = S.emp_no
 JOIN titles T ON E.emp_title_id = T.title_id  
 ORDER BY S.salary DESC  
 LIMIT 100;              
+
+------------------------------------------------------------------------------------
+------------------          		  EXTRA				-----------------------------
+-- Show the count of employees in every department and sort them by highest
+--  to lowest
+------------------------------------------------------------------------------------
+
+SELECT D.dept_name, COUNT(E.emp_no) AS employee_count
+FROM departments D
+JOIN dept_emp DE ON D.dept_no = DE.dept_no
+JOIN Employees E ON DE.emp_no = E.emp_no
+GROUP BY D.dept_name
+ORDER BY employee_count DESC;  
