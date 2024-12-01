@@ -1,3 +1,8 @@
+--------------------------------------------------------------------------------------------
+-- Tables creation
+--------------------------------------------------------------------------------------------
+
+
 CREATE TABLE titles (
     title_id VARCHAR NOT NULL,
     title VARCHAR NOT NULL,
@@ -14,7 +19,7 @@ CREATE TABLE Employees (
     hire_date DATE NOT NULL,
     CONSTRAINT pk_Employees PRIMARY KEY (emp_no),
     CONSTRAINT fk_emp_title FOREIGN KEY (emp_title_id) 
-    REFERENCES titles (title_id)  -- Referencing title_id in titles table
+    REFERENCES titles (title_id)  
 );
 
 CREATE TABLE departments (
@@ -43,6 +48,11 @@ CREATE TABLE salaries (
     )
 );
 
+
+--------------------------------------------------------------------------------------------
+-- Getting a sight of the tables to see that everything was imported in the way it should
+--------------------------------------------------------------------------------------------
+
 SELECT * FROM Employees;
 SELECT * FROM departments;
 SELECT * FROM titles;
@@ -50,6 +60,10 @@ SELECT * FROM dept_manager;
 SELECT * FROM dept_emp;
 SELECT * FROM salaries;
 
+
+--------------------------------------------------------------------------------------------
+-- Doing some adjunstments on the tables for the links between them
+--------------------------------------------------------------------------------------------
 
 ALTER TABLE dept_manager ADD CONSTRAINT fk_dept_manager_emp_no FOREIGN KEY(emp_no)
 REFERENCES Employees (emp_no);
