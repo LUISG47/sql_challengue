@@ -10,6 +10,9 @@ For this project, you’ll design the tables to hold the data from the CSV files
 
 The CSV that you will be using are located on the resources folder, make sure to point them correctly when you create and import them to the tables
 
+The table creations are contained on the file named table_schemata.sql
+The querys for the tables for the analysis are contained in the file named querys.sql
+
 The sketch of the Entity Relationship Diagram of the tables was created on QUICKDBD: https://www.quickdatabasediagrams.com/
 
 This is the sketch that served as a guidance for the link between tables:
