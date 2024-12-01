@@ -16,3 +16,6 @@ This is the sketch that served as a guidance for the link between tables:
 
 
 
+![QuickDBD-NEW DB](https://github.com/user-attachments/assets/a7f456a7-dce8-4aed-900d-b03391723983)
+
+The Primary Keys and Foreign keys were selected in order to link all tables without problems.
