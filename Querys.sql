@@ -127,3 +127,11 @@ JOIN dept_emp DE ON D.dept_no = DE.dept_no
 JOIN Employees E ON DE.emp_no = E.emp_no
 GROUP BY D.dept_name
 ORDER BY employee_count DESC;  
+
+
+-----------------------------------------------------------------------------------------
+------------------          	 CONCLUSSION			----------------------------------
+-- With this tables we got to see that the data was indeed created randomly for Pewlett 
+-- Hackard as we saw that the salarys didn't match in proportion to the profile 
+-- of the role in the company.
+-----------------------------------------------------------------------------------------
