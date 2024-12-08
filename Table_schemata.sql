@@ -1,5 +1,7 @@
 --------------------------------------------------------------------------------------------
 -- Tables creation
+--									IMPORTANT
+--Be sure to only run this part in order to be able to upload the csv's without error
 --------------------------------------------------------------------------------------------
 
 
@@ -63,6 +65,8 @@ SELECT * FROM salaries;
 
 --------------------------------------------------------------------------------------------
 -- Doing some adjunstments on the tables for the links between them
+-- 						¡¡¡¡	IMPORTANT	!!!!
+-- Do not run this part until you have already imported the tables
 --------------------------------------------------------------------------------------------
 
 ALTER TABLE dept_manager ADD CONSTRAINT fk_dept_manager_emp_no FOREIGN KEY(emp_no)
