@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------------------
+--								  	      PART 1
 -- Tables creation
---									IMPORTANT
+--							 	¡¡¡¡	IMPORTANT	!!!!
 --Be sure to only run this part in order to be able to upload the csv's without error
 --------------------------------------------------------------------------------------------
 
@@ -64,6 +65,7 @@ SELECT * FROM salaries;
 
 
 --------------------------------------------------------------------------------------------
+--								  PART 2
 -- Doing some adjunstments on the tables for the links between them
 -- 						¡¡¡¡	IMPORTANT	!!!!
 -- Do not run this part until you have already imported the tables
